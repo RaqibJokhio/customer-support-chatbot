@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.env
+venv/
+*.egg-info/
+
+# FAISS index (regenerated from PDFs, no need to commit)
+backend/faiss_index/
+
+# Uploaded PDFs (user data, not source code)
+backend/uploads/
+
+# Node
+node_modules/
+dist/
+
+# OS
+.DS_Store
+Thumbs.db
