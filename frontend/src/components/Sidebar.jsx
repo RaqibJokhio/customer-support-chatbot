@@ -59,7 +59,7 @@ export default function Sidebar({ pdfLoaded, filename, onUploadSuccess }) {
           </svg>
         </div>
         <div>
-          <div className="text-sm font-semibold text-white">DocChat</div>
+          <div className="text-sm font-semibold text-white">AskMyDoc</div>
           <div className="text-xs" style={{ color: "#6b6b8a" }}>AI Support Assistant</div>
         </div>
       </div>
