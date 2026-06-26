@@ -37,7 +37,7 @@ def build_vector_store(chunks):
 
 def build_qa_chain(vector_store):
     llm = ChatGroq(
-        model="llama3-8b-8192",
+        model="llama-3.1-8b-instant",
         api_key=os.getenv("GROQ_API_KEY"),
         temperature=0.2
     )
@@ -45,6 +45,7 @@ def build_qa_chain(vector_store):
     prompt = PromptTemplate.from_template("""
 You are a helpful customer support assistant.
 Use ONLY the context below to answer the question.
+Do NOT mention document IDs, chunk IDs, or any internal metadata.
 If the answer is not in the context, say "I don't have information about that in the uploaded document."
 
 Context:
